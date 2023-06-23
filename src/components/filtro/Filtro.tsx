@@ -1,5 +1,5 @@
 import { useVoting } from "../../context";
-import React, { ChangeEvent } from "react";
+import { ChangeEvent } from "react";
 import "./index.scss";
 
 export default function Filtro() {
