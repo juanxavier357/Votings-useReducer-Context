@@ -9,13 +9,13 @@ export default function VotosIndividuales() {
     return (
         <>
             {candidatos.map((candidato) => (
-                <div className='content__votos--individuales'>
+                <div className='content__votos--individuales' key={candidato.id}>
                     <div>
                         <h3>
                             {candidato.name} :
                             {state.show === 'total'
                                 ? ` ${candidato.votes} votos`
-                                : state.show === 'percentage'
+                                : state.show === 'porcentaje'
                                     ? ` ${candidato.percentage.toFixed(2)}%`
                                     : ` ${candidato.votes} votos = ${candidato.percentage.toFixed(2)}%`}
 
